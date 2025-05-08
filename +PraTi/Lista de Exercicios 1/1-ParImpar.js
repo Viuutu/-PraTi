@@ -1,10 +1,7 @@
-function verificarParImpar(num) {
-    if (num % 2 === 0) {
-      console.log(`${num} é par`);
-    } else {
-      console.log(`${num} é ímpar`);
-    }
-  }
-  
-  verificarParImpar(7);
-  
+let numero = parseInt(prompt("Digite um número inteiro:"));
+
+if (numero % 2 === 0) {
+    console.log("O número é par.");
+} else {
+    console.log("O número é ímpar.");
+}
