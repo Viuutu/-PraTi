@@ -1,8 +1,5 @@
-function tabuada(num) {
-    for (let i = 1; i <= 10; i++) {
-      console.log(`${num} x ${i} = ${num * i}`);
-    }
-  }
-  
-  tabuada(7);
-  
+let numero = parseInt(prompt("Digite um número para ver a tabuada:"));
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`${numero} x ${i} = ${numero * i}`);
+}
