@@ -1,20 +1,17 @@
-function calcularMedia() {
-    let soma = 0;
-    let count = 0;
-  
-    while (true) {
-      let num = parseFloat(prompt("Digite um número (digite 0 para parar):"));
-      if (num === 0) break;
-      soma += num;
-      count++;
+let soma = 0;
+let count = 0;
+let num;
+
+do {
+    num = parseFloat(prompt("Digite um número decimal (0 para sair):"));
+    if (num !== 0) {
+        soma += num;
+        count++;
     }
-  
-    if (count > 0) {
-      console.log(`Média: ${soma / count}`);
-    } else {
-      console.log("Nenhum número foi inserido.");
-    }
-  }
-  
-  calcularMedia();
-  
+} while (num !== 0);
+
+if (count > 0) {
+    console.log("Média:", (soma / count).toFixed(2));
+} else {
+    console.log("Nenhum número foi inserido.");
+}
