@@ -1,20 +1,15 @@
-function menu() {
-    let opcao = prompt("Escolha uma opção: \n1. Opção 1\n2. Opção 2\n3. Opção 3");
-  
-    switch (opcao) {
-      case "1":
-        console.log("Você escolheu a Opção 1");
+let opcao = parseInt(prompt("Escolha uma opção:\n1 - Ver perfil\n2 - Editar perfil\n3 - Sair"));
+
+switch (opcao) {
+    case 1:
+        console.log("Você escolheu Ver perfil");
         break;
-      case "2":
-        console.log("Você escolheu a Opção 2");
+    case 2:
+        console.log("Você escolheu Editar perfil");
         break;
-      case "3":
-        console.log("Você escolheu a Opção 3");
+    case 3:
+        console.log("Saindo...");
         break;
-      default:
-        console.log("Opção inválida");
-    }
-  }
-  
-  menu();
-  
+    default:
+        console.log("Opção inválida.");
+}
