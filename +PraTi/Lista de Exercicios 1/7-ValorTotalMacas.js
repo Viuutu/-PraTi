@@ -1,8 +1,5 @@
-function calcularCompraMacas(qtdMacas) {
-    let preco = qtdMacas < 12 ? 0.30 : 0.25;
-    let total = preco * qtdMacas;
-    console.log(`Valor total: R$ ${total.toFixed(2)}`);
-  }
-  
-  calcularCompraMacas(15);
-  
+let qtd = parseInt(prompt("Quantas maçãs você quer comprar?"));
+let preco = qtd < 12 ? 0.30 : 0.25;
+let total = qtd * preco;
+
+console.log(`Valor total da compra: R$ ${total.toFixed(2)}`);
