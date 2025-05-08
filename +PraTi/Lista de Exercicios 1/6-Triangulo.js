@@ -1,16 +1,15 @@
-function verificarTriangulo(A, B, C) {
-    if (A < B + C && B < A + C && C < A + B) {
-      if (A === B && B === C) {
-        console.log("Triângulo Equilátero");
-      } else if (A === B || A === C || B === C) {
-        console.log("Triângulo Isósceles");
-      } else {
-        console.log("Triângulo Escaleno");
-      }
+let a = parseFloat(prompt("Lado A:"));
+let b = parseFloat(prompt("Lado B:"));
+let c = parseFloat(prompt("Lado C:"));
+
+if (a < b + c && b < a + c && c < a + b) {
+    if (a === b && b === c) {
+        console.log("Triângulo equilátero");
+    } else if (a === b || a === c || b === c) {
+        console.log("Triângulo isósceles");
     } else {
-      console.log("Não é um triângulo");
+        console.log("Triângulo escaleno");
     }
-  }
-  
-  verificarTriangulo(3, 3, 3);
-  
+} else {
+    console.log("Os lados não formam um triângulo");
+}
