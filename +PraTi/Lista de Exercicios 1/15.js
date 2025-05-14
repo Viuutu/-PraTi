@@ -1,9 +1,11 @@
-let a = 0, b = 1;
+function fibonacci(n) {
+    let sequencia = [0, 1]
 
-console.log("Sequência de Fibonacci:");
-for (let i = 0; i < 10; i++) {
-    console.log(a);
-    let temp = a;
-    a = b;
-    b = temp + b;
+    for (let i = 2; i < n; i++) {
+        sequencia[i] = sequencia[i - 1] + sequencia[i - 2]
+    }
+
+    return sequencia
 }
+
+console.log(fibonacci(10))
