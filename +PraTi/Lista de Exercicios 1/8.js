@@ -1,3 +1,5 @@
+// 8. Escreva um algoritmo para ler 2 valores (considere que não serão lidos valores iguais) e escreve-los em ordem crescente.
+
 let num1 = parseFloat(prompt("Digite o primeiro número:"));
 let num2 = parseFloat(prompt("Digite o segundo número:"));
 
